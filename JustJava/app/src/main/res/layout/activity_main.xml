@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pesanan"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:paddingBottom="20dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Increment"
+            android:onClick="pressButton"/>
+
+        <TextView
+            android:id="@+id/lblJumlah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decrement"
+            android:onClick="pressDecrement"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Harga"
+        android:paddingBottom="15dp"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rp.0"
+        android:textSize="30dp"
+        android:paddingBottom="15dp"
+        android:textColor="@android:color/holo_blue_bright"
+        android:id="@+id/harga"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order"
+        android:onClick="hitungHarga"
+        />
+
+    <TextView
+        android:id="@+id/txtTanggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TANGGAL"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="20sp"
+        />
+
+    <ListView
+        android:id="@+id/lstItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
