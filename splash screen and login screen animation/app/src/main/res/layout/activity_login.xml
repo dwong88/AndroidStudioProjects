@@ -159,7 +159,9 @@
             android:fontFamily="sans-serif"
             android:text="Signup Now"
             android:textAllCaps="true"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:id="@+id/btn_signup"
+            />
 
         <Button
             android:layout_width="wrap_content"
