@@ -5,7 +5,7 @@ package com.myandroid.davidwong.mycrud;
  * kodingindonesia
  */
 
-public class konfigurasi {
+public class  konfigurasi {
 
     //Dibawah ini merupakan Pengalamatan dimana Lokasi Skrip CRUD PHP disimpan
     //Pada tutorial Kali ini, karena kita membuat localhost maka alamatnya tertuju ke IP komputer
