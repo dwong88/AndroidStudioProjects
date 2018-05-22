@@ -6,12 +6,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.RelativeLayout;
 
 public class Activity_Login extends AppCompatActivity {
 
     RelativeLayout rellay1, rellay2;
     Button tambah,lihat,signup;
+    EditText UsernameEt, PasswordEt;
 
     Handler handler = new Handler();
     Runnable runnable = new Runnable() {
@@ -42,15 +44,36 @@ public class Activity_Login extends AppCompatActivity {
             }
         });
 
+
+
         signup =(Button) findViewById(R.id.btn_signup);
 
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),Tambah.class);
+                Intent intent = new Intent(getApplicationContext(),Register.class);
                 startActivity(intent);
             }
         });
+
+    }
+
+    public void OnLogin(View view) {
+
+        UsernameEt = (EditText)findViewById(R.id.txtNama);
+        PasswordEt = (EditText)findViewById(R.id.txtPass);
+        //String username = UsernameEt.getText().toString();
+        //String password = PasswordEt.getText().toString();
+
+        String username = "aaa";
+        String password = "aaa";
+        String type = "login";
+        BackgroundWorker backgroundWorker = new BackgroundWorker(this);
+        //BackgroundWorker backgroundWorker = new BackgroundWorker(getBaseContext());
+        backgroundWorker.execute(type, username, password);
+        Intent intent = new Intent(getApplicationContext(),Dashboard.class);
+        startActivity(intent);
+
     }
 
 }

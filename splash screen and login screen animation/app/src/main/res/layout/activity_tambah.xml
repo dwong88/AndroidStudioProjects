@@ -4,15 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/grad_bg"
     tools:context=".Tambah">
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10sp"
-        android:orientation="vertical"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+        s
+        <ImageView
+            android:id="@+id/imgView_logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon" />
 
         <!--Nama -->
         <TextView
@@ -27,8 +36,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:inputType="textPersonName"
-            android:hint="Input Your Name Here" />
+            android:hint="Input Your Name Here"
+            android:inputType="textPersonName" />
 
         <!--Email-->
         <TextView
@@ -43,8 +52,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:inputType="textEmailAddress"
-            android:hint="Input Your E-mail " />
+            android:hint="Input Your E-mail "
+            android:inputType="textEmailAddress" />
 
         <!--Jenis Kelamin-->
         <TextView
@@ -76,11 +85,27 @@
 
         </RadioGroup>
 
+        <!--Password -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Password"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/txtPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Input Your Password Here"
+            android:inputType="textPersonName" />
+
         <Button
             android:id="@+id/btnAdd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Save"/>
+            android:text="Save" />
 
     </LinearLayout>
 </RelativeLayout>
