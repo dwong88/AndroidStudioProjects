@@ -11,7 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.support.v7.widget.Toolbar;
 
-public class Dashboard extends AppCompatActivity {
+public class Menuatas extends AppCompatActivity {
 
     private Toolbar mToolbar;
     @Override

@@ -9,6 +9,8 @@
     <string name="item_2">Item 2</string>
     <string name="item_3">Item 3</string>
 
+    <string name="action_search">Search</string>
+    <string name="action_settings">Setting</string>
     <!-- OnBoard Screen. -->
 
     <string name="ob_header1">SIMPLE ABROAD CALLS</string>

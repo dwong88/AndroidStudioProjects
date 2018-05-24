@@ -56,4 +56,10 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void OnSkip(View view) {
+        Intent intent = new Intent(getApplicationContext(),Menuatas.class);
+        startActivity(intent);
+
+    }
 }
