@@ -1,52 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeActivity"
-    android:orientation="vertical"
-    android:id="@+id/HomeActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nama Pegawai" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editTextName" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Posisi" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editTextDesg" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Gajih" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editTextSalary" />
+    android:background="@drawable/bgiphonex"
+    android:id="@+id/myrl">
 
     <Button
-        android:id="@+id/buttonAdd"
-        android:layout_width="match_parent"
+        android:id="@+id/btnIntro"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:text="Tambah Pegawai" />
+        android:layout_centerInParent="true"
+        android:background="@drawable/transparent_bg_bordered_button"
+        android:text="@string/introduksi"
+        android:textColor="@color/colorWhite" />
+
 
     <Button
-        android:layout_width="match_parent"
+        android:id="@+id/btnReg"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Daftar Pegawai"
-        android:id="@+id/buttonView" />
-</LinearLayout>
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btnIntro"
+        android:layout_marginBottom="98dp"
+        android:background="@drawable/transparent_bg_bordered_button"
+        android:text="@string/daftar"
+        android:textColor="@color/colorWhite"
+        android:onClick="OnReg"
+        />
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnIntro"
+        android:layout_alignTop="@+id/btnReg"
+        android:background="@drawable/transparent_bg_bordered_button"
+        android:text="@string/masuk"
+        android:textColor="@color/colorWhite"
+        android:onClick="OnLogin"
+        />
+
+    <Button
+        android:id="@+id/btnLewati"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/transparent_bg_bordered_button"
+        android:text="@string/lewati"
+        android:textColor="@color/colorWhite" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:textColor="@color/colorWhite"
+        android:text="&#169;Hak Cipta oleh G-hours, 2017"
+        android:textSize="8sp" />
+
+</RelativeLayout>
